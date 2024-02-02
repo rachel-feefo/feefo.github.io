@@ -1,9 +1,351 @@
-body {
-    background-color: #eeeeee;
+.ExternalClass,
+.ExternalClass div,
+.ExternalClass font,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass td,
+img {
+  line-height: 100%;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+.ExternalClass,
+.ReadMsgBody {
+  width: 100%;
+}
+
+a,
+blockquote,
+body,
+li,
+p,
+table,
+td {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  outline: 0;
+  text-decoration: none;
 }
 
 table {
-    background-color: #ffffff;
+  border-collapse: collapse !important;
 }
 
-p {color:red;}
+#bodyCell,
+#bodyTable,
+body {
+  height: 65px;
+  margin: 0;
+  padding: 0;
+}
+
+#bodyCell {
+  padding: 20px;
+}
+
+#bodyTable {
+  width: 600px;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  min-width: 100vw;
+}
+
+.ReadMsgBody,
+.ExternalClass {
+  width: 100%;
+  /* Force Hotmail to display emails at full width */
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+  /* Force Hotmail to display normal line spacing.  */
+}
+
+#MessageViewBody a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  /*Samsung fix for default linking styles*/
+}
+
+img {
+  outline: none;
+  border: 0;
+  line-height: 100%;
+  height: auto;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  /* "-ms-interpolation-mode: bicubic" works to help ie properly resize images in IE. (if you are resizing them using the width and height attributes)*/
+}
+
+a img {
+  border: none;
+  /* "border:none" removes border when linking images.*/
+}
+
+table,
+td {
+  border-collapse: collapse;
+  border-spacing: 0 !important;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+table.feedback-button {
+  width: 137px !important;
+  height: 48px !important;
+}
+
+.main-text {
+  font-size: 16px;
+}
+
+.footer-text {
+  font-size: 18px;
+}
+
+.extra-footer-text {
+  font-size: 12px;
+}
+
+.responsive-fff-bg {
+  background-color: #FFFFFF;
+}
+
+.responsive-EEE-bg {
+  background-color: #EEEEEE;
+}
+
+.responsive-f8f-bg {
+  background-color: #f8f8f8;
+}
+
+.responsive-f4f-bg {
+  background-color: #f4f4f4,
+}
+
+.responsive-fff {
+  color: #FFFFFF;
+}
+
+.responsive-232 {
+  color: #232323;
+}
+
+.responsive-737 {
+  color: #737373;
+}
+
+.responsive-6b6 {
+  color: #6b6b6b;
+}
+
+.responsive-9c9 {
+  color: #9c9c9c;
+}
+
+.responsive-EEE-bg {
+  background-color: #EEEEEE;
+}
+
+.responsive-7c7 {
+  color: #7c7c7c
+}
+
+.responsive-f2f-border {
+  border: 10px solid #f2f2f2
+}
+
+.header-logo {
+  border: 10px solid white;
+  border-radius: 16px;
+}
+
+.main-area-td {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.logo-area {
+  padding: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-area-td {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  .header-logo {
+    border-color: white;
+  }
+
+  .light-logo {
+    display: none !important;
+    mso-hide: all !important;
+  }
+
+  .dark-logo {
+    display: block !important;
+    mso-hide: none !important;
+  }
+
+  .responsive-f4f-bg {
+    background-color: #0b0b0b;
+  }
+
+  .responsive-fff-bg,
+  .responsive-EEE-bg {
+    background-color: #000000;
+  }
+
+  .responsive-f8f-bg {
+    background-color: #070707;
+  }
+
+  .responsive-fff {
+    color: #000000;
+  }
+
+  .responsive-232 {
+    color: #DCDCDC;
+  }
+
+  .responsive-737 {
+    color: #8c8c8c;
+  }
+
+  .responsive-6b6 {
+    color: #949494;
+  }
+
+  .responsive-9c9 {
+    color: #9e9e9e;
+  }
+
+  .responsive-f2f-border {
+    border: 10px solid #434343;
+  }
+
+  [data-ogsc] body {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  [data-ogsc] .light-logo {
+    display: none !important;
+  }
+
+  [data-ogsc] .dark-logo {
+    display: block !important;
+  }
+
+  [data-ogsc] .responsive-f4f-bg {
+    background-color: #0b0b0b;
+  }
+
+  [data-ogsc] .responsive-fff-bg {
+    background-color: #000000;
+  }
+
+  [data-ogsc] .responsive-f8f-bg {
+    background-color: #070707;
+  }
+
+  [data-ogsc] .responsive-EEE-bg {
+    background-color: #000000;
+  }
+
+  [data-ogsc] .responsive-fff {
+    color: #000000;
+  }
+
+  [data-ogsc] .responsive-232 {
+    color: #DCDCDC;
+  }
+
+  [data-ogsc] .responsive-737 {
+    color: #8c8c8c;
+  }
+
+  [data-ogsc] .responsive-6b6 {
+    color: #949494;
+  }
+
+  [data-ogsc] .responsive-9c9 {
+    color: #9e9e9e;
+  }
+
+  [data-ogsc] .responsive-f2f-border {
+    border: 10px solid #434343;
+  }
+
+  [data-ogsc] .header-logo {
+    border-color: white;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .outlookHeight {
+    height: 122px !important;
+  }
+
+  .main-text {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .extra-footer-text {
+    font-size: 10px;
+  }
+
+  .mainTable {
+    width: 100% !important;
+    min-width: 320px !important;
+  }
+
+  .fluid {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 35px !important;
+  }
+
+  .logo-area {
+    max-width: 210px !important;
+    min-width: 112px !important;
+  }
+
+}
